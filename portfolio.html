@@ -8,15 +8,14 @@ title: Portfolio
 <ul>
   {% for item in site.data.portfolio %}
   <li>
-    <h2>{{ item.name }}</h2>
     <a href="{{ item.link }}">
-      <img
+      <img class="portfolio-image"
         src="{{ item.img }}"
         alt="Portfolio Image"
         width="500"
         height="500"
-        style="position: absolute;"
       />
+      <h2 class="portfolio-title">{{ item.name }}</h2>
       <a>{{ item.type }}</a>
     </a>
   </li>

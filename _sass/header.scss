@@ -1,0 +1,21 @@
+.site-header {
+  margin-bottom: 50px;
+  background-color: $pblue;
+}
+
+.site-header .wrapper {
+  max-width: 1500px;
+}
+
+.header-title {
+  font-size: 50px;
+}
+
+nav a.nav-item {
+  background-color: palegreen;
+  border: 10px solid;
+}
+
+nav a.nav-current {
+  background-color: $ppink;
+}

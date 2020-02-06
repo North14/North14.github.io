@@ -1,16 +1,40 @@
 ---
-
 ---
 
-html, body {
-  height: 100%
+$pgreen: #afeeaf;
+$pblue: #afeeee;
+$ppink: #eeafee;
+$pred: #eeafaf;
+
+span, p {
+  font-size: 22px;
 }
 
-.content {
-  overflow: auto;
-  padding-bottom: 100px
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px
+}
+
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 5px 15px;
 }
 
 @import "header";
 @import "content";
 @import "footer";
+@import "fontawesome";

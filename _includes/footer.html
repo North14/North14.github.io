@@ -1,3 +1,8 @@
-<div class="container">
-  <p>Test</p>
+<div class="wrapper">
+  <h2 class="section-title">Contact me at:</h2>
+  <p class="">Contact me at:</p>
+  <ul class="social-media-list">
+    {%- if site.github -%}<li><a href="https://github.com/{{ site.github | relative_url }}"><i class="fab fa-github-square"></i><span>{{ site.github | escape }}</span></a></li>{%- endif -%}
+    {%- if site.email -%}<li><a href="mailto:{{ site.email }}"><i class="far fa-envelope"></i><span>{{ site.email | escape }}</span></a></li>{%- endif -%}
+  </ul>
 </div>
