@@ -1,0 +1,8 @@
+- name: Smorjgropen
+  link: https://smorjgropen.se
+  img: /assets/images/portfolio/
+  type: WordPress
+- name: FishTail
+  link: https://fishtail.se
+  img: /assets/images/portfolio/
+  type: WordPress
