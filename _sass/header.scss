@@ -1,21 +1,36 @@
 .site-header {
   margin-bottom: 50px;
   background-color: $pblue;
-}
 
-.site-header .wrapper {
-  max-width: 1500px;
-}
+  .wrapper {
+    max-width: 1500px;
+    padding: 25px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid black;
+  
+    .header-title {
+      font-size: 50px;
+    }
+    
+    nav {
+      display: inline-flex;
+      flex-flow: row wrap;
+      align-content: space-between;
+      right: 0;
 
-.header-title {
-  font-size: 50px;
-}
-
-nav a.nav-item {
-  background-color: palegreen;
-  border: 10px solid;
-}
-
-nav a.nav-current {
-  background-color: $ppink;
+      .nav-item {
+        background-color: $ppink;
+        border: 10px solid $ppink;
+        margin: 0 10px;
+      }
+      
+      .nav-current {
+        background-color: $pred;
+        border-color: $pred;
+      } 
+    }
+  }
 }

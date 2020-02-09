@@ -1,8 +1,8 @@
 <div class="wrapper">
   <h2 class="section-title">Contact me at:</h2>
-  <p class="">Contact me at:</p>
+  <br>
   <ul class="social-media-list">
-    {%- if site.github -%}<li><a href="https://github.com/{{ site.github | relative_url }}"><i class="fab fa-github-square"></i><span>{{ site.github | escape }}</span></a></li>{%- endif -%}
-    {%- if site.email -%}<li><a href="mailto:{{ site.email }}"><i class="far fa-envelope"></i><span>{{ site.email | escape }}</span></a></li>{%- endif -%}
+    {%- if site.github -%}<li class="social-media-item"><a href="https://github.com/{{ site.github }}" target="_blank"><i class="fab fa-github-square"></i><span>{{ site.github | escape }}</span></a></li>{%- endif -%}
+    {%- if site.email -%}<li class="social-media-item"><a href="mailto:{{ site.email }}" target="_blank"><i class="far fa-envelope"></i><span>{{ site.email | escape }}</span></a></li>{%- endif -%}
   </ul>
 </div>

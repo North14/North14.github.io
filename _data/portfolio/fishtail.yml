@@ -1,0 +1,9 @@
+name: FishTail
+description: WordPress website for shoe company
+link: https://fishtail.se
+img: /assets/images/portfolio/fishtail.png
+skills:
+  - WordPress
+  - WooCommerce
+  - HTML
+  - CSS

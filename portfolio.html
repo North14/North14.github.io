@@ -2,22 +2,32 @@
 layout: default
 title: Portfolio
 ---
-
-<h1>Portfolio</h1>
-
-<ul>
-  {% for item in site.data.portfolio %}
-  <li>
-    <a href="{{ item.link }}">
-      <img class="portfolio-image"
-        src="{{ item.img }}"
-        alt="Portfolio Image"
-        width="500"
-        height="500"
-      />
-      <h2 class="portfolio-title">{{ item.name }}</h2>
-      <a>{{ item.type }}</a>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+<div class="portfolio-content">
+  <h1 class="portfolio-title">Portfolio</h1>
+  
+  <ul class="portfolio-grid">
+    {% for item_hash in site.data.portfolio %}
+    {% assign item = item_hash[1] %}
+    <li class="portfolio-item">
+      <a href="{{ item.link }}">
+        <img class="portfolio-item-image"
+          src="{{ item.img }}"
+          alt="Portfolio Image"
+          width="400"
+          height="400"
+        />
+        <h2 class="portfolio-item-title">{{ item.name }}</h2>
+        <p class="portfolio-item-description">{{ item.description }}</p>
+        {% if item.skills %}
+          <ul class="portfolio-item-skills">
+            <li class="portfolio-item-skills-used"><strong>Skills used:</strong></li>
+            {% for skill in item.skills %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,9 +1,27 @@
 .site-footer {
-  margin-top: 200px;
-  background-color: lightgray;
-}
+  margin-top: 150px;
+  background-color: $pgreen;
 
-.container {
-  min-height: 100%;
-}
+  .wrapper {
+    text-align: center;
+    min-height: 100%;
+    margin: 0 auto;
+  }
 
+  h2.section-title {
+    font-size: 30px;
+    display: inline-block;
+    margin: 20px 30% 20px 0;
+  }
+  
+  ul.social-media-list {
+    margin: 0 auto;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  
+  li.social-media-item {
+    margin: 0 20px;
+  }
+}
