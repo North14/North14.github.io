@@ -1,0 +1,8 @@
+name: North14
+description: This Jekyll website
+link: https://north14.github.io
+img: /assets/images/portfolio/north14.png
+skills:
+  - Jekyll
+  - HTML
+  - CSS
